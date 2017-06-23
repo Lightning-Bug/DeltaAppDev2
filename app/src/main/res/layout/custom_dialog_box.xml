@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/hd"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnChoosePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:width="200dp"
+        android:background="@drawable/dialogborder"
+        android:onClick="btnChoosePathClicked"
+        android:text="From Gallery"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnChoosePath"
+        android:layout_alignStart="@+id/btnChoosePath"
+        android:layout_below="@+id/btnChoosePath"
+        android:layout_marginTop="31dp"
+        android:width="200dp"
+        android:background="@drawable/dialogborder"
+        android:onClick="btnTakePhotoClicked"
+        android:text="Take Photo"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnTakePhoto"
+        android:layout_alignStart="@+id/btnTakePhoto"
+        android:layout_centerVertical="true"
+        android:width="200dp"
+        android:background="@drawable/dialogborder"
+        android:onClick="btnExitClicked"
+        android:text="Exit"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold" />
+</RelativeLayout>

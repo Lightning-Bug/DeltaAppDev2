@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorbg"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Add Images"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/water"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/cap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="1"
+        android:hint="Photo caption"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:onClick="ToAdd"
+        android:text="Add to list"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:background="@drawable/bdesign2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/image"
+        android:layout_alignEnd="@+id/image" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/buttondesign"
+        android:layout_marginTop="47dp"
+        android:layout_weight="3"
+        android:onClick="selectImage"
+        android:text="Select Image"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
